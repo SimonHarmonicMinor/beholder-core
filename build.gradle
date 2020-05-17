@@ -39,6 +39,10 @@ test {
     useJUnitPlatform()
 }
 
+ext {
+    jacocoDestinationFile = "${buildDir}/jacoco/test.exec"
+}
+
 modifyPom {
     project {
         name 'beholder-core'
@@ -89,5 +93,6 @@ nexusStaging {
 sonarqube {
     properties {
         property "sonar.projectKey", "SimonHarmonicMinor_beholder-core"
+        property "sonar.jacoco.reportPath", "${buildDir}/jacoco/test.exec"
     }
 }
