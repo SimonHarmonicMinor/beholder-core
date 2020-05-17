@@ -1,0 +1,85 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'maven'
+    id 'io.codearte.nexus-staging' version '0.11.0'
+}
+
+apply plugin: 'com.bmuschko.nexus'
+
+archivesBaseName = 'beholder-core'
+group 'com.github.simonharmonicminor'
+version '0.1-ALPHA-SNAPSHOT'
+description 'Java code style checker'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    implementation 'com.github.simonharmonicminor:java-useful-utils:1.1'
+    implementation 'fr.inria.gforge.spoon:spoon-core:8.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+modifyPom {
+    project {
+        name 'beholder-core'
+        description 'Java code style checker'
+        url 'https://github.com/SimonHarmonicMinor/beholder-core'
+        inceptionYear '2020'
+
+        scm {
+            url 'https://github.com/SimonHarmonicMinor/beholder-core'
+            connection 'scm:https://github.com/SimonHarmonicMinor/beholder-core.git'
+            developerConnection 'scm:git://github.com/SimonHarmonicMinor/beholder-core.git'
+        }
+
+        licenses {
+            license {
+                name 'MIT License'
+                url 'https://www.mit.edu/~amini/LICENSE.md'
+                distribution 'repo'
+            }
+        }
+
+        developers {
+            developer {
+                id 'kirekov'
+                name 'Semyon Kirekov'
+                email 'kirekov@gmail.com'
+            }
+        }
+    }
+}
+
+extraArchive {
+    sources = true
+    tests = true
+    javadoc = true
+}
+
+nexus {
+    sign = true
+    repositoryUrl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+    snapshotRepositoryUrl = 'https://oss.sonatype.org/content/repositories/snapshots/'
+}
+
+nexusStaging {
+    packageGroup = "com.github.simonharmonicminor"
+}
