@@ -31,7 +31,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-    implementation 'com.github.simonharmonicminor:java-useful-utils:1.1'
+    implementation 'com.github.simonharmonicminor:java-useful-utils:1.2'
     implementation 'fr.inria.gforge.spoon:spoon-core:8.1.0'
 }
 
