@@ -1,6 +1,6 @@
 package com.github.simonharmonicminor.beholder.core.api.constructor;
 
-import com.github.simonharmonicminor.beholder.core.api.ParamElement;
+import com.github.simonharmonicminor.beholder.core.api.param.ParamElement;
 import com.github.simonharmonicminor.beholder.core.api.Element;
 import com.github.simonharmonicminor.juu.collection.immutable.ImmutableList;
 
