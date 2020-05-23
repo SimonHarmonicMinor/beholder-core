@@ -22,8 +22,7 @@ public enum Modifier {
     /**
      * Returns this modifier's name in lowercase.
      */
-    @Override
-    public String toString() {
+    public String toLowercase() {
         return lowercase.get();
     }
 }
