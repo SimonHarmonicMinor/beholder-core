@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.method;
+package com.github.simonharmonicminor.beholder.core.api.method;
 
 /**
  * Represents procedure declared in one type.
