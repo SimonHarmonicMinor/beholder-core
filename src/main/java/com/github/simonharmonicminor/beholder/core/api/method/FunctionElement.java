@@ -7,5 +7,5 @@ public interface FunctionElement extends MethodElement {
     /**
      * @return the type returned by the function
      */
-    Class<?> getReturningType();
+    Class<?> returningType();
 }

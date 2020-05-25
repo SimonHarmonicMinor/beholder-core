@@ -11,5 +11,5 @@ public interface ConstructorElement extends Element {
     /**
      * @return parameters passed to the constructor
      */
-    ImmutableList<ParamElement> getConstructorParams();
+    ImmutableList<ParamElement> constructorParams();
 }
