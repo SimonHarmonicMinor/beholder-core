@@ -11,21 +11,21 @@ public interface Element {
     /**
      * @return element's position in the code
      */
-    ElementPosition getElementPosition();
+    ElementPosition position();
 
     /**
      * @return set of modifiers applied to this element
      * @see Modifier
      */
-    ImmutableSet<Modifier> getModifiers();
+    ImmutableSet<Modifier> modifiers();
 
     /**
      * @return set of annotations applied to this element
      */
-    ImmutableSet<Annotation> getAnnotations();
+    ImmutableSet<Annotation> annotations();
 
     /**
      * @return fully-qualified name of the element
      */
-    String getName();
+    String name();
 }

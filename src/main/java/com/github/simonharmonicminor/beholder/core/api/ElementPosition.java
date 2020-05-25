@@ -1,17 +1,17 @@
 package com.github.simonharmonicminor.beholder.core.api;
 
 /**
- * Represents coordinates of one code element
+ * Represents coordinates of one's code element
  */
 public interface ElementPosition {
 
     /**
      * @return the line in the source file (1 indexed)
      */
-    int getLineNumber();
+    int lineNumber();
 
     /**
      * @return the column in the source file (1 indexed)
      */
-    int getColumnNumber();
+    int columnNumber();
 }

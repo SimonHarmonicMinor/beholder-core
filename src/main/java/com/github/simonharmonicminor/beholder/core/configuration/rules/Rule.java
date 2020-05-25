@@ -5,5 +5,8 @@ package com.github.simonharmonicminor.beholder.core.configuration.rules;
  * A rule defines a set of restrictions that should be applied to one code element.
  */
 public interface Rule {
-    ViolationLevel getViolationLevel();
+    /**
+     * @return the level that defines rule importance
+     */
+    ViolationLevel violationLevel();
 }

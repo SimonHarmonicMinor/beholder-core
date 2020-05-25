@@ -9,5 +9,5 @@ public interface TypeVariableElement extends Element {
     /**
      * @return variable's class
      */
-    Class<?> getVariableClass();
+    Class<?> variableClass();
 }

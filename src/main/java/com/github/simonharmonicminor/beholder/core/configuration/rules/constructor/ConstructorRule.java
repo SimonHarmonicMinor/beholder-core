@@ -5,8 +5,16 @@ import com.github.simonharmonicminor.beholder.core.configuration.rules.param.Par
 
 import java.util.OptionalInt;
 
+/**
+ * Represents a rule that defines restrictions to constructors
+ */
 public interface ConstructorRule extends Rule {
-    OptionalInt getMaxParamsCount();
+    /**
+     * Returns max allowed parameters count in a constructor, if such restriction is specified.
+     * Returns {@linkplain OptionalInt#empty()} otherwise.
+     * @return max parameters count or {@linkplain OptionalInt#empty()}
+     */
+    OptionalInt maxParamsCount();
 
-    ParamRule getParamRule();
+    ParamRule paramRule();
 }

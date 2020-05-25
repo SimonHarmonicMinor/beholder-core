@@ -4,10 +4,22 @@ import com.github.simonharmonicminor.beholder.core.configuration.rules.construct
 import com.github.simonharmonicminor.beholder.core.configuration.rules.method.FunctionRule;
 import com.github.simonharmonicminor.beholder.core.configuration.rules.method.ProcedureRule;
 
+/**
+ * Configuration that defines rules that will be applied to all code elements
+ */
 public interface BeholderConfig {
-    ConstructorRule getConstructorRule();
+    /**
+     * @return rule applied to constructors
+     */
+    ConstructorRule constructorRule();
 
-    FunctionRule getFunctionRule();
+    /**
+     * @return rule applied to functions
+     */
+    FunctionRule functionRule();
 
-    ProcedureRule getProcedureRule();
+    /**
+     * @return rule applied to procedures
+     */
+    ProcedureRule procedureRule();
 }

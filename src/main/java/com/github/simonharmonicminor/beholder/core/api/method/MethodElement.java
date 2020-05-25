@@ -11,10 +11,10 @@ public interface MethodElement extends Element {
     /**
      * @return true if this method overrides one from extended type, returns false otherwise
      */
-    boolean isOverridden();
+    boolean overridden();
 
     /**
      * @return params passed to the method
      */
-    ImmutableList<ParamElement> getMethodParams();
+    ImmutableList<ParamElement> methodParams();
 }

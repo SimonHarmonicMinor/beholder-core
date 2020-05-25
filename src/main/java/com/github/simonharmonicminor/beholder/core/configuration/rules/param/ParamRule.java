@@ -3,7 +3,7 @@ package com.github.simonharmonicminor.beholder.core.configuration.rules.param;
 import com.github.simonharmonicminor.beholder.core.configuration.rules.Rule;
 
 /**
- * Represents the rule applied to either constructor's or method's parameters
+ * Represents a rule that defines restriction to parameters passed to either constructor or to method
  */
 public interface ParamRule extends Rule {
     /**
