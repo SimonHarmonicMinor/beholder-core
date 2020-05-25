@@ -7,20 +7,21 @@ addons:
     token:
       secure: "dp1ApZS9ctCyCjapl+Om86H4rNDHL7y7FDrOSdN+DH/uOP1ZQIN4HD+lU2X2XEMj7rPcyjrfDWF0dUPW3ybg/a3w/h8Dir/46sZQpNBB8rhxDpxgLSZ730THToCxRBSrMFi/f+QhP3i98WXQeVxaoUTaw3KZ6oobx413o//6yUfZ7SIj15TSVbsGtXkccFVyjCopBlbMWyDgsKFq6YF79htfTZ4X0yuVZ/5ZJk6t7dzN5C21ScNVffsaUq+GPMKQ1qz3FA4xx6Ieonh569yjmD8jXInCNz89qaI+xDuAKQnF1wtgVpmECdVcJHz5HiT/3eOZ2dXEaEIr3nmZE6n4F6uLUaUuT4gXz9lLKzilJv8LaYzQcvU5P7vzz/FwL8voGS0dOxI3AWqkFCjqgYsCkGlGdokecA4uzDt7VnCGpG/gnOpJjkvcIojkI5AmRDPEH0HTw+SDA1dLTRz59OnRPYyp2dU0VyeJfZ/TFbLbh7YIl0w2VZRFTBDHwnk3i3fi/SHfqo2ZLQUNrtyG9BOgd+2TddcXfs2A92l4Cwwu1nJst3q+8V+TPg1ZzNO0Gw9BabyY0iZqo0bNXTJVcPeA7LX5n/V7s+Y0bopVWEquwHtU8MuM8ZHYTUG+/e6WnkPFiVmCNTekbVQfE/beNzu4n7/Rx73svmmNSv62ILLVYAc="
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_2afbb999f001_key -iv $encrypted_2afbb999f001_iv -in gradle.properties.enc -out gradle.properties -d
-  - openssl aes-256-cbc -K $encrypted_c2f58914b0fd_key -iv $encrypted_c2f58914b0fd_iv -in secret-keys.gpg.enc -out secret-keys.gpg -d
+script:
+  - "./gradlew clean build jacocoTestReport sonarqube -x signArchives"
 
 branches:
   only:
     - master
 
-script:
-  - "./gradlew clean build jacocoTestReport sonarqube -x signArchives"
+before_deploy:
+  - openssl aes-256-cbc -K $encrypted_2afbb999f001_key -iv $encrypted_2afbb999f001_iv -in gradle.properties.enc -out gradle.properties -d
+  - openssl aes-256-cbc -K $encrypted_c2f58914b0fd_key -iv $encrypted_c2f58914b0fd_iv -in secret-keys.gpg.enc -out secret-keys.gpg -d
 
 deploy:
   - provider: script
-    script: bash ./travis_scripts/deploy_snapshot_to_maven_central.sh
+    skip_cleanup: true
+    script: bash ./deploy_snapshot_to_maven_central.sh
     on:
       branch: master
 
