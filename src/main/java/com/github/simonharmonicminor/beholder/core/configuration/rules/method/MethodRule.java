@@ -7,5 +7,7 @@ public interface MethodRule {
 
     boolean publicShouldBeOverridden();
 
+    boolean overriddenShouldHaveAnnotation();
+
     boolean requiresCamelCase();
 }
