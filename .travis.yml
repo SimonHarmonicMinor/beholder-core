@@ -20,7 +20,7 @@ script:
 
 deploy:
   - provider: script
-    script: ".travis_scripts/deploy_snapshot_to_maven_central.sh"
+    script: bash ./travis_scripts/deploy_snapshot_to_maven_central.sh
     on:
       branch: master
 
