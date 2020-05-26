@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.api;
+package com.github.simonharmonicminor.beholder.core.element;
 
 /**
  * Represents coordinates of one's code element

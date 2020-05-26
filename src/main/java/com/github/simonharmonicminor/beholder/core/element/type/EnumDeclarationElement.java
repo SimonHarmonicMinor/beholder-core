@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.api.type;
+package com.github.simonharmonicminor.beholder.core.element.type;
 
 /**
  * Represents enum declaration.

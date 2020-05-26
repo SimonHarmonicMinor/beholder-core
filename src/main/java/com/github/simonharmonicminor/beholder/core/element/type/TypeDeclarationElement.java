@@ -1,6 +1,6 @@
-package com.github.simonharmonicminor.beholder.core.api.type;
+package com.github.simonharmonicminor.beholder.core.element.type;
 
-import com.github.simonharmonicminor.beholder.core.api.Element;
+import com.github.simonharmonicminor.beholder.core.element.Element;
 
 /**
  * The base interface for all type declarations (classes, interfaces and enums)

@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.api;
+package com.github.simonharmonicminor.beholder.core.element;
 
 import org.junit.jupiter.api.Test;
 

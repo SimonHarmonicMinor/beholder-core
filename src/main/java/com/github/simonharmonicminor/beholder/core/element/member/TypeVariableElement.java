@@ -1,6 +1,6 @@
-package com.github.simonharmonicminor.beholder.core.api.member;
+package com.github.simonharmonicminor.beholder.core.element.member;
 
-import com.github.simonharmonicminor.beholder.core.api.Element;
+import com.github.simonharmonicminor.beholder.core.element.Element;
 
 /**
  * Represents variable declared inside one type (class, enum or interface)

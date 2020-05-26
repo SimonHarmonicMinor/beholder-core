@@ -1,6 +1,6 @@
-package com.github.simonharmonicminor.beholder.core.api.param;
+package com.github.simonharmonicminor.beholder.core.element.param;
 
-import com.github.simonharmonicminor.beholder.core.api.Element;
+import com.github.simonharmonicminor.beholder.core.element.Element;
 
 /**
  * Represents a param passed inside a constructor a method

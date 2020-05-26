@@ -1,7 +1,7 @@
-package com.github.simonharmonicminor.beholder.core.api.method;
+package com.github.simonharmonicminor.beholder.core.element.method;
 
-import com.github.simonharmonicminor.beholder.core.api.Element;
-import com.github.simonharmonicminor.beholder.core.api.param.ParamElement;
+import com.github.simonharmonicminor.beholder.core.element.Element;
+import com.github.simonharmonicminor.beholder.core.element.param.ParamElement;
 import com.github.simonharmonicminor.juu.collection.immutable.ImmutableList;
 
 /**
