@@ -1,8 +1,8 @@
-package com.github.simonharmonicminor.beholder.core.configuration.rules;
+package com.github.simonharmonicminor.beholder.core;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class ViolationLevelTest {
     @Test
