@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.configuration.rules.method;
+package com.github.simonharmonicminor.beholder.core.configuration.rule.method;
 
 import java.util.OptionalInt;
 

@@ -1,7 +1,7 @@
-package com.github.simonharmonicminor.beholder.core.configuration.rules.constructor;
+package com.github.simonharmonicminor.beholder.core.configuration.rule.constructor;
 
-import com.github.simonharmonicminor.beholder.core.configuration.rules.Rule;
-import com.github.simonharmonicminor.beholder.core.configuration.rules.param.ParamRule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.Rule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.param.ParamRule;
 
 import java.util.OptionalInt;
 

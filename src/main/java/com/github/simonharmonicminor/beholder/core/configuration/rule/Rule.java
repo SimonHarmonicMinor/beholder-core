@@ -1,4 +1,4 @@
-package com.github.simonharmonicminor.beholder.core.configuration.rules;
+package com.github.simonharmonicminor.beholder.core.configuration.rule;
 
 import com.github.simonharmonicminor.beholder.core.ViolationLevel;
 

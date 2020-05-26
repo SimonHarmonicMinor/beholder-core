@@ -1,8 +1,8 @@
 package com.github.simonharmonicminor.beholder.core.configuration;
 
-import com.github.simonharmonicminor.beholder.core.configuration.rules.constructor.ConstructorRule;
-import com.github.simonharmonicminor.beholder.core.configuration.rules.method.FunctionRule;
-import com.github.simonharmonicminor.beholder.core.configuration.rules.method.ProcedureRule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.constructor.ConstructorRule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.method.FunctionRule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.method.ProcedureRule;
 
 /**
  * Configuration that defines rules that will be applied to all code elements

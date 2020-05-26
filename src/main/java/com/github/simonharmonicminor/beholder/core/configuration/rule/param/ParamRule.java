@@ -1,6 +1,6 @@
-package com.github.simonharmonicminor.beholder.core.configuration.rules.param;
+package com.github.simonharmonicminor.beholder.core.configuration.rule.param;
 
-import com.github.simonharmonicminor.beholder.core.configuration.rules.Rule;
+import com.github.simonharmonicminor.beholder.core.configuration.rule.Rule;
 
 /**
  * Represents a rule that defines restriction to parameters passed to either constructor or to method
