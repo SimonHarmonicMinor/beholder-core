@@ -23,7 +23,7 @@ java {
 apply plugin: 'com.bmuschko.nexus'
 
 archivesBaseName = 'beholder-core'
-group 'com.github.simonharmonicminor'
+group 'com.kirekov'
 version 'DEV-SNAPSHOT'
 description 'Automatic Java code style checker'
 
