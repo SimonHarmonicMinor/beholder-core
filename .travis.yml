@@ -21,7 +21,7 @@ before_deploy:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: bash ./deploy_snapshot_to_maven_central.sh
+    script: bash ./deploy.sh
     on:
       branch: master
 
