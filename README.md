@@ -31,7 +31,7 @@ The build won't be passed, if there is any rule that failed.
 Maven:
 ```xml
 <dependency>
-    <groupId>com.github.simonharmonicminor</groupId>
+    <groupId>com.kirekov</groupId>
     <artifactId>beholder-core</artifactId>
 </dependency>
 ```
@@ -39,7 +39,7 @@ Maven:
 Gradle:
 ```groovy
 dependencies {
-    implementation 'com.github.simonharmonicminor:beholder-core' 
+    implementation 'com.kirekov:beholder-core' 
 }
 ```
 
